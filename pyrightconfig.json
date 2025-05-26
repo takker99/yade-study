@@ -1,0 +1,15 @@
+{
+  "exclude": [
+    "**/__pycache__",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+  ],
+  "ignore": [
+    "./yade/yadeimport/__init__.py",
+  ],
+  "include": [],
+  "pythonPlatform": "All",
+  "pythonVersion": "3.12",
+  "venv": ".venv"
+}

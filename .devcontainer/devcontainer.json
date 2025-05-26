@@ -1,0 +1,15 @@
+{
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "charliermarsh.ruff",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    // jammy
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y yade && curl -LsSf https://astral.sh/uv/install.sh | sh && uv sync --frozen"
+}

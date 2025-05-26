@@ -1,0 +1,25 @@
+[project]
+name = "yade-study"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "argparse>=1.4.0",
+    "future>=1.0.0",
+    "ipython>=8.36.0",
+    "mpmath>=1.3.0",
+    "numpy>=2.2.6",
+    "xlib>=0.21",
+    "yade",
+]
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.401",
+    "ruff>=0.11.11",
+    "setuptools>=80.8.0",
+]
+
+[tool.uv.sources]
+yade = { path = "yade" }
