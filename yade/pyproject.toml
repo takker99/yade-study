@@ -6,8 +6,9 @@ readme = ""
 requires-python = ">=3.10"
 dependencies = []
 
+
 [tool.setuptools]
-packages = ["yadeimport"]
+packages = ["yade"]
 
 [tool.setuptools.package-data]
-yadeimport = ["py.typed", "*.pyi"]
+yade = ["py.typed", "*.pyi"]
