@@ -1,0 +1,13 @@
+[project]
+name = "yade"
+version = "0.0.1"
+description = "YADE Python bindings"
+readme = ""
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+packages = ["yadeimport"]
+
+[tool.setuptools.package-data]
+yadeimport = ["py.typed", "*.pyi"]
