@@ -1,5 +1,5 @@
 [project]
-name = "yade"
+name = "yadeimport"
 version = "0.0.1"
 description = "YADE Python bindings"
 readme = ""
@@ -8,7 +8,7 @@ dependencies = []
 
 
 [tool.setuptools]
-packages = ["yade"]
+packages = []
 
 [tool.setuptools.package-data]
-yade = ["py.typed", "*.pyi"]
+yadeimport = ["py.typed", "*.pyi"]

@@ -5,11 +5,12 @@
                 "ms-python.python",
                 "charliermarsh.ruff",
                 "ms-python.vscode-pylance",
-                "ms-toolsai.jupyter"
+                "ms-toolsai.jupyter",
+                "tamasfe.even-better-toml"
             ]
         }
     },
     // jammy
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
-    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y yade && curl -LsSf https://astral.sh/uv/install.sh | sh && uv sync --frozen"
+    "postCreateCommand": "bash scripts/build_yade.sh && curl -LsSf https://astral.sh/uv/install.sh | sh && uv sync --frozen"
 }
